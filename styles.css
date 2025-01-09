@@ -5,6 +5,27 @@ body {
     color: #fff;
 }
 
+/* Popup styles */
+#popup {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#popup.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+#popup .animate-fadeIn {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* Cookie consent styles for popup timing */
+.popup-shown {
+    display: none !important;
+}
+
 /* Hero section */
 .hero-section {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),

@@ -73,3 +73,58 @@ const animateOnScroll = () => {
 
 window.addEventListener('scroll', animateOnScroll);
 window.addEventListener('load', animateOnScroll);
+
+// Popup handling
+document.addEventListener('DOMContentLoaded', function() {
+    const popup = document.getElementById('popup');
+    const closePopup = document.getElementById('closePopup');
+    const popupForm = document.getElementById('popupForm');
+    
+    // Check if popup has been shown in this session
+    if (!sessionStorage.getItem('popupShown')) {
+        // Show popup after 3 seconds
+        setTimeout(() => {
+            popup.classList.remove('hidden');
+            popup.classList.add('active');
+        }, 3000);
+    }
+    
+    // Close popup when clicking the close button
+    closePopup.addEventListener('click', () => {
+        popup.classList.remove('active');
+        setTimeout(() => {
+            popup.classList.add('hidden');
+        }, 300);
+    });
+    
+    // Close popup when clicking outside
+    popup.addEventListener('click', (e) => {
+        if (e.target === popup) {
+            popup.classList.remove('active');
+            setTimeout(() => {
+                popup.classList.add('hidden');
+            }, 300);
+        }
+    });
+    
+    // Handle form submission
+    popupForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const email = e.target.querySelector('input[type="email"]').value;
+        
+        // Here you would typically send the email to your server
+        console.log('Email submitted:', email);
+        
+        // Close popup
+        popup.classList.remove('active');
+        setTimeout(() => {
+            popup.classList.add('hidden');
+        }, 300);
+        
+        // Show success message
+        alert('Thank you for signing up! Your 20% discount code will be sent to your email.');
+        
+        // Mark popup as shown in this session
+        sessionStorage.setItem('popupShown', 'true');
+    });
+});
