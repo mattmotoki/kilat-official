@@ -59,7 +59,7 @@ if (contactForm) {
 
 // Animate elements on scroll
 const animateOnScroll = () => {
-    const elements = document.querySelectorAll('.product-card, .feature-icon');
+    const elements = document.querySelectorAll('.product-card, .feature-icon, #tutorials .bg-black');
     
     elements.forEach(element => {
         const elementTop = element.getBoundingClientRect().top;

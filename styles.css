@@ -40,6 +40,21 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/* Tutorial cards */
+#tutorials .bg-black {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#tutorials .bg-black:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#tutorials button {
+    transition: color 0.3s ease;
+}
+
 /* Buttons */
 .btn-primary {
     background-color: #DC2626;
