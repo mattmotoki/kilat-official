@@ -100,53 +100,123 @@
     </section>
 
     <!-- Features Section -->
-    <section class="py-20 bg-red-600">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-12">Features & Benefits</h2>
+    <section class="py-20 bg-gradient-to-br from-red-900 via-red-800 to-gray-900 relative overflow-hidden">
+        <!-- Decorative floating shapes -->
+        <div class="absolute top-0 right-0 -rotate-45 w-64 h-64 bg-red-500/10 rounded-3xl blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 rotate-45 w-64 h-64 bg-red-700/10 rounded-3xl blur-3xl"></div>
+        
+        <div class="container mx-auto px-6 relative">
+            <h2 class="text-4xl font-bold mb-12 text-center">Features & Benefits</h2>
+            
             <div class="grid md:grid-cols-2 gap-12">
+                <!-- Product Features Column -->
                 <div>
-                    <h3 class="text-2xl font-bold mb-6">Product Features</h3>
-                    <ul class="space-y-4">
-                        <li class="flex items-center gap-3">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/>
-                            </svg>
-                            Fast Application
+                    <h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                        <div class="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-car text-lg"></i>
+                        </div>
+                        Product Features
+                    </h3>
+                    <ul>
+                        <li class="p-4 rounded-lg">
+                            <div class="flex flex-col">
+                                <div class="flex items-center mb-1">
+                                    <div class="w-8 flex-shrink-0">
+                                        <i class="fas fa-bolt text-xl"></i>
+                                    </div>
+                                    <h4 class="font-semibold text-lg">Fast Application</h4>
+                                </div>
+                                <div class="flex">
+                                    <div class="w-8 flex-shrink-0"></div>
+                                    <p class="text-gray-300">Quick and easy to apply, saving you valuable time</p>
+                                </div>
+                            </div>
                         </li>
-                        <li class="flex items-center gap-3">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/>
-                            </svg>
-                            High Performance
+                        
+                        <li class="p-4 rounded-lg">
+                            <div class="flex flex-col">
+                                <div class="flex items-center mb-1">
+                                    <div class="w-8 flex-shrink-0">
+                                        <i class="fas fa-gauge-high text-xl"></i>
+                                    </div>
+                                    <h4 class="font-semibold text-lg">High Performance</h4>
+                                </div>
+                                <div class="flex">
+                                    <div class="w-8 flex-shrink-0"></div>
+                                    <p class="text-gray-300">Professional-grade results every time</p>
+                                </div>
+                            </div>
                         </li>
-                        <li class="flex items-center gap-3">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/>
-                            </svg>
-                            Eco-Friendly Formula
+                        
+                        <li class="p-4 rounded-lg">
+                            <div class="flex flex-col">
+                                <div class="flex items-center mb-1">
+                                    <div class="w-8 flex-shrink-0">
+                                        <i class="fas fa-leaf text-xl"></i>
+                                    </div>
+                                    <h4 class="font-semibold text-lg">Eco-Friendly Formula</h4>
+                                </div>
+                                <div class="flex">
+                                    <div class="w-8 flex-shrink-0"></div>
+                                    <p class="text-gray-300">Safe for the environment and your vehicle</p>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
+
+                <!-- Personal Benefits Column -->
                 <div>
-                    <h3 class="text-2xl font-bold mb-6">Personal Benefits</h3>
-                    <ul class="space-y-4">
-                        <li class="flex items-center gap-3">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/>
-                            </svg>
-                            Save Time
+                    <h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                        <div class="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-user-gear text-lg"></i>
+                        </div>
+                        Personal Benefits
+                    </h3>
+                    <ul>
+                        <li class="p-4 rounded-lg">
+                            <div class="flex flex-col">
+                                <div class="flex items-center mb-1">
+                                    <div class="w-8 flex-shrink-0">
+                                        <i class="fas fa-clock text-xl"></i>
+                                    </div>
+                                    <h4 class="font-semibold text-lg">Save Time</h4>
+                                </div>
+                                <div class="flex">
+                                    <div class="w-8 flex-shrink-0"></div>
+                                    <p class="text-gray-300">Get professional results in less time</p>
+                                </div>
+                            </div>
                         </li>
-                        <li class="flex items-center gap-3">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/>
-                            </svg>
-                            Cost-Effective
+                        
+                        <li class="p-4 rounded-lg">
+                            <div class="flex flex-col">
+                                <div class="flex items-center mb-1">
+                                    <div class="w-8 flex-shrink-0">
+                                        <i class="fas fa-piggy-bank text-xl"></i>
+                                    </div>
+                                    <h4 class="font-semibold text-lg">Cost-Effective</h4>
+                                </div>
+                                <div class="flex">
+                                    <div class="w-8 flex-shrink-0"></div>
+                                    <p class="text-gray-300">Professional results at a fraction of the cost</p>
+                                </div>
+                            </div>
                         </li>
-                        <li class="flex items-center gap-3">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/>
-                            </svg>
-                            Convenient for All
+                        
+                        <li class="p-4 rounded-lg">
+                            <div class="flex flex-col">
+                                <div class="flex items-center mb-1">
+                                    <div class="w-8 flex-shrink-0">
+                                        <i class="fas fa-user-check text-xl"></i>
+                                    </div>
+                                    <h4 class="font-semibold text-lg">Convenient for All</h4>
+                                </div>
+                                <div class="flex">
+                                    <div class="w-8 flex-shrink-0"></div>
+                                    <p class="text-gray-300">Easy to use regardless of experience level</p>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
